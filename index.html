@@ -1,0 +1,429 @@
+<!doctype html>
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+
+	<title>CuriousCars - Car Rental Website</title>
+
+	<meta name="description" content="">
+	<meta name="author" content="Manoj">
+	<meta name="copyright" content="CuriousLabs">
+
+	<!--=== Favicon ===-->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="assets/js/google-code-prettify/prettify.css" media="screen">
+	<script src="assets/js/google-code-prettify/prettify.js"></script>
+
+
+
+	<script src="assets/js/jquery.js"></script>
+
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+
+	<script>document.createElement('section'); var duration = '500', easing = 'easeInQuad';</script>
+	<script src="assets/js/script.js"></script>
+
+	<style>
+		html {
+			background-color: #FFFFFF;
+			color: #383838;
+		}
+
+		::-moz-selection {
+			background: #444444;
+			color: #DDDDDD;
+		}
+
+		::selection {
+			background: #444444;
+			color: #DDDDDD;
+		}
+
+		#documenter_sidebar #documenter_logo {
+			background-image: url(assets/images/image_1.png);
+		}
+
+		a {
+			color: #0000FF;
+		}
+
+		.btn {
+			border-radius: 3px;
+		}
+
+		.btn-primary {
+			background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
+			background-image: -ms-linear-gradient(top, #0088CC, #0044CC);
+			background-image: -webkit-gradient(linear, 0 0, 0 0088CC%, from(#DDDDDD), to(#0044CC));
+			background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
+			background-image: -o-linear-gradient(top, #0088CC, #0044CC);
+			background-image: linear-gradient(top, #0088CC, #0044CC);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+			border-color: #0044CC #0044CC #bfbfbf;
+			color: #FFFFFF;
+		}
+
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+			border-color: #0088CC #0088CC #bfbfbf;
+			background-color: #0044CC;
+		}
+
+		hr {
+			border-top: 1px solid #EBEBEB;
+			border-bottom: 1px solid #FFFFFF;
+		}
+
+		#documenter_sidebar,
+		#documenter_sidebar ul a {
+			background-color: #DDDDDD;
+			color: #222222;
+		}
+
+		#documenter_sidebar ul a {
+			-webkit-text-shadow: 1px 1px 0px #EEEEEE;
+			-moz-text-shadow: 1px 1px 0px #EEEEEE;
+			text-shadow: 1px 1px 0px #EEEEEE;
+		}
+
+		#documenter_sidebar ul {
+			border-top: 1px solid #AAAAAA;
+		}
+
+		#documenter_sidebar ul a {
+			border-top: 1px solid #EEEEEE;
+			border-bottom: 1px solid #AAAAAA;
+			color: #444444;
+		}
+
+		#documenter_sidebar ul a:hover {
+			background: #444444;
+			color: #DDDDDD;
+			border-top: 1px solid #444444;
+		}
+
+		#documenter_sidebar ul a.current {
+			background: #444444;
+			color: #DDDDDD;
+			border-top: 1px solid #444444;
+		}
+
+		#documenter_copyright {
+			display: block !important;
+			visibility: visible !important;
+		}
+	</style>
+
+</head>
+
+<body class="documenter-project-Curious Cars">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+
+			<li><a href="#introduction" title="Introduction">Introduction</a></li>
+			<li><a href="#features" title="Features">Features</a></li>
+			<li><a href="#file_stracture" title="File Stracture">File Structure</a></li>
+			<li><a href="#template_layout" title="Template Layout">Template Layout</a></li>
+			<li><a href="#javascript_ajax" title="Javascript &amp; Ajax">Javascript &amp; Ajax</a></li>
+			<li><a href="#source_credits" title="Source &amp; Credits">Source &amp; Credits</a></li>
+			<li><a href="#thank_you" title="Thank you">Thank you</a></li>
+
+		</ul>
+		<div id="documenter_copyright">Copyright CuriousLabs 2019
+		</div>
+	</div>
+	<div id="documenter_content">
+		<section id="documenter_cover">
+			<h1>Curious Cars</h1>
+			<h2>Simple Car Rental Website</h2>
+			<div id="documenter_buttons">
+
+			</div>
+			<hr>
+			<ul>
+				<li>created: 29/03/2019</li>
+				<li>latest update: 30/03/2019</li>
+				<li>by:<a href="http://curiouslabs.in/manoj">CuriousLabs</a></li>
+				<li>email: <a href="mailto:manojbv93@gmail.com"><span>manoj@curiouslabs.in</span></a></li>
+			</ul>
+			<p>If you have any questions that are beyond the scope of this help file, please feel free to email me. Thanks so
+				much!</p>
+		</section>
+
+		<section id="introduction">
+			<div class="page-header">
+				<h3>Introduction</h3>
+				<hr class="notop">
+			</div>
+			<h2>
+				Curious Cars<strong>&nbsp;-&nbsp;</strong>Simple Car Rental Website</h2>
+			<div>
+				&nbsp;</div>
+			<div>
+				<strong>Curious Cars</strong> -&nbsp;<span style="color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif;">A
+					Bootstrap 4 based basic Car Rental HTML5 Template</span></div>
+			<div>
+				&nbsp;</div>
+			<div>
+				<strong>Curious Cars&nbsp;</strong>is fully Responsive Template. It is Multi-Device supported &amp; Cross Browser
+				Compatible. Well Documented. This Documentation provides you with a clear guideline for how to use and customize
+				the template.</div>
+		</section>
+		<section id="features">
+			<div class="page-header">
+				<h3>Features</h3>
+				<hr class="notop">
+			</div>
+
+			<ul style="margin: 18px 0px; padding-right: 0px; padding-left: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(0, 0, 0);">
+				<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+					Perfect Bootstrap 4 Elements.</li>
+				<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+					Well Commented Code that helps you to easy customization.</li>
+				<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+					Clean and W3C validate the code.</li>
+				<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+					All necessary Elements Included etc.</li>
+				<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+					Google Fonts.</li>
+				<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+					Font Awesome 5 Icons.</li>
+				<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+					Fully Responsive and Supported Multiple Modern Device like Mobile, Tablet, Desktop, etc.</li>
+				<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+					All Modern Browser Supported.</li>
+				<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+					Modular CSS Block Styles &amp; W3C Validated Code.</li>
+				<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+					Well Documented.</li>
+			</ul>
+		</section>
+		<section id="file_stracture">
+			<div class="page-header">
+				<h3>File Stracture</h3>
+				<hr class="notop">
+			</div>
+			<p>
+				<strong>Curious Cars</strong><span style="color: rgb(0, 0, 0); font-family: Arial, verdana, arial, sans-serif;"><strong>&nbsp;-&nbsp;</strong>Template
+					file structure:</span></p>
+			<div class="alert alert-info">
+				<strong>Curious Cars</strong><br>
+				|<br>
+				|-------------&nbsp;&nbsp;<strong>assets</strong><br>
+				|------------------------&nbsp; <strong>css</strong><br>
+				|--------------------------------&nbsp;&nbsp;<b>bootstrap.min.css</b><br>
+				|--------------------------------&nbsp;&nbsp;<b>font-awesome.css</b><br>
+				|--------------------------------&nbsp;&nbsp;<b>reset.css</b><br>
+				|--------------------------------&nbsp;&nbsp;<b>responsive.css</b><br>
+				|--------------------------------&nbsp; <b>plugins</b><br>
+				|----------------------------------------&nbsp;&nbsp;<b>animate.css</b><br>
+				|----------------------------------------&nbsp;&nbsp;<b>gijgo.css</b><br>
+				|----------------------------------------&nbsp;&nbsp;<b>magnific-popup.css</b><br>
+				|----------------------------------------&nbsp;&nbsp;<b>owl.carousel.min.css</b><br>
+				|----------------------------------------&nbsp;&nbsp;<b>slicknav.min.css</b><br>
+				|----------------------------------------&nbsp;&nbsp;<b>vegas.min.css</b><br>
+				|------------------------&nbsp; <strong>fonts</strong><br>
+				|------------------------&nbsp; <strong>img</strong><br>
+				|------------------------&nbsp; <strong>js</strong><br>
+				|--------------------------------&nbsp;&nbsp;<b>bootstrap.min.js</b><br>
+				|--------------------------------&nbsp;&nbsp;<b>jquery-3.2.1.min.js</b><br>
+				|--------------------------------&nbsp;&nbsp;<b>jquery-migrate.min.js</b><br>
+				|--------------------------------&nbsp;&nbsp;<b>main.js</b><br>
+				|--------------------------------&nbsp;&nbsp;<b>popper.min.js</b><br>
+				|--------------------------------&nbsp; <b>plugins</b><br>
+				|----------------------------------------&nbsp;&nbsp;<b>isotope.min.js</b><br>
+				|----------------------------------------&nbsp;&nbsp;<b>gijgo.jss</b><br>
+				|----------------------------------------&nbsp;&nbsp;<b>magnific-popup.min.js</b><br>
+				|----------------------------------------&nbsp;&nbsp;<b>owl.carousel.min.js</b><br>
+				|----------------------------------------&nbsp;&nbsp;<b>slicknav.min.js</b><br>
+				|----------------------------------------&nbsp;&nbsp;<b>vegas.min.js</b><br>
+				|--------------------------------&nbsp; <b>business</b><br>
+				|----------------------------------------&nbsp;&nbsp;<b>data</b><br>
+				|---------------------------------------------&nbsp;&nbsp;<b>mc_week_days_def.js</b><br>
+				|---------------------------------------------&nbsp;&nbsp;<b>sample_cars.js</b><br>
+				|---------------------------------------------&nbsp;&nbsp;<b>sample_locations.js</b><br>
+				|----------------------------------------&nbsp;&nbsp;<b>query</b><br>
+				|---------------------------------------------&nbsp;&nbsp;<b>cars.js</b><br>
+				|---------------------------------------------&nbsp;&nbsp;<b>home.js</b><br>
+				|-------------&nbsp;&nbsp;<strong>style.css</strong><br>
+				|-------------&nbsp;&nbsp;<strong>favicon.ico</strong><br>
+				|-------------&nbsp;<strong>All HTML File at here</strong></div>
+		</section>
+		<section id="template_layout">
+			<div class="page-header">
+				<h3>Template Layout</h3>
+				<hr class="notop">
+			</div>
+			<h3 style="white-space: normal;">
+				HTML Structure</h3>
+			<ul>
+				<li style="white-space: normal;">
+					Preloader</li>
+				<li style="white-space: normal;">
+					Header</li>
+				<li style="white-space: normal;">
+					Page Content</li>
+				<li style="white-space: normal;">
+					Page Footer</li>
+			</ul>
+			<pre class="prettyprint lang-html linenums">
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;!--CSS includes--&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Preloader
+    ================================================== --&gt;
+    &lt;div class=&quot;preloader&quot;&gt; 
+    &lt;/div&gt;&lt;!-- /preloader --&gt;
+ 
+    &lt;!-- Header 
+    ================================================== --&gt;
+    &lt;header class=&quot;fixed-to&quot; id=&quot;header-area&quot;&gt;
+    	 &lt;!-- header-top --&gt; 
+         &lt;!-- header-bottom --&gt; 
+    &lt;/header&gt;&lt;!-- /.page-header --&gt; 
+
+    &lt;!-- Section Block 
+    ================================================== --&gt; 
+    &lt;section&gt;
+         // All Section Are Going at Same Role  
+    &lt;/section&gt;&lt;!-- /.section-block --&gt; 
+
+    &lt;!-- Page Footer 
+    ================================================== --&gt; 
+    &lt;section id=&quot;footer-area&quot;&gt; 
+    &lt;/section&gt;&lt;!-- /.site-footer --&gt; 
+
+    &lt;!-- JavaScript Files 
+    ================================================== --&gt; 
+    &lt;script&gt; 
+    //JS plugins includes 
+    &lt;/script&gt; 
+&lt;/body&gt; 
+&lt;/html&gt;</pre>
+		</section>
+
+		<section id="javascript_ajax">
+			<div class="page-header">
+				<h3>Javascript &map; Ajax</h3>
+				<hr class="notop">
+			</div>
+			<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(0, 0, 0);">
+				This template has following javascript plugins:</p>
+			<ul style="margin: 18px 0px; padding-right: 0px; padding-left: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(0, 0, 0);">
+				<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+					Bootstrap js</li>
+				<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+					jQuery js</li>
+				<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+					jQuery Migrate js</li>
+				<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+					Gijgo js</li>
+				<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+					Owl Carousel js</li>
+				<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+					Magnific Popup</li>
+				<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+					Isotope Js</li>
+				<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+					Vegas js</li>
+				<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+					Slicknav js</li>
+				<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+					popper js</li>
+				<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+					main js</li>
+			</ul>
+			<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(0, 0, 0);">
+				all these files are located in<span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline;">&nbsp;js&nbsp;</span>folder,
+				And our custom main.js is located in assets/ js folder in the root directory.</p>
+
+
+			<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(0, 0, 0);">
+				This template has following custom javascript functions</p>
+
+			<ul style="margin: 18px 0px; padding-right: 0px; padding-left: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(0, 0, 0);">
+				<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+					mc_week_days_def js - which has definations of week days</li>
+				<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+					sample_cars js - which has function to get all the dummy cars</li>
+				<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+					sample_location js - which has function to get all the dummy locations</li>
+				<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+					cars js - which has various functions related to cars.html page</li>
+				<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+					home js - which has various functions related to home.html page</li>
+			</ul>
+
+			<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(0, 0, 0);">
+				all these files are located in<span style="margin: 0px; padding: 0px; border: 0px; outline: 0px;  font-style: inherit; font-family: inherit; vertical-align: baseline;">&nbsp;js/business/data and query&nbsp;</span>folder,</p>
+		</section>
+
+
+
+
+		<section id="source_credits">
+			<div class="page-header">
+				<h3>Source &amp; Credits</h3>
+				<hr class="notop">
+			</div>
+			<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(0, 0, 0);">
+				We are thankful for...</p>
+			<ul style="margin: 18px 0px; padding-right: 0px; padding-left: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(0, 0, 0);">
+				<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+					<a href="http://jquery.com/" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; color: rgb(0, 147, 210); text-decoration-line: none; cursor: pointer;">jQuery</a></li>
+				<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+					<a href="http://getbootstrap.com/" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; color: rgb(0, 147, 210); text-decoration-line: none; cursor: pointer;">Bootstrap</a></li>
+				<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+					<a href="http://fontawesome.io/icons" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; color: rgb(0, 147, 210); text-decoration-line: none; cursor: pointer;">Font
+						Awesome</a></li>
+				<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+					<a href="https://github.com/dimsemenov/Magnific-Popup" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; color: rgb(0, 147, 210); text-decoration-line: none; cursor: pointer;">Magnific
+						Popup</a></li>
+				<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+					<a href="https://github.com/OwlFonk/OwlCarousel" style="font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; color: rgb(0, 147, 210); text-decoration-line: none; cursor: pointer;">Owl
+						Carousel</a></li>
+				<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+					gijgo js</li>
+				<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+					isotope</li>
+				<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+					slicknav js</li>
+				<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+					popper js</li>
+				<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+					vegas js</li>
+			</ul>
+		</section>
+		<section id="thank_you">
+			<div class="page-header">
+				<h3>Thank you</h3>
+				<hr class="notop">
+			</div>
+			<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+				Feel free to contact us, We&#39;d be glad to help you if you have any questions relating to this product.</p>
+			<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+				<font face="Arial, verdana, arial, sans-serif"><b>CuriousLabs</b></font>
+			</p>
+		</section>
+
+	</div>
+</body>
+
+</html>
